@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Login or sign-up.Rent.al</title>
+    <link rel="stylesheet" href="stylelog or sign.css">
+    <style>
+      .head{
+    color: white;
+    font-family:'Trebuchet MS';
+    font-size: 75px;
+    text-align: center;
+    padding-top: 70px;
+    text-shadow: 3px 3px 5px black,-3px -3px 5px black;
+    display: inline-block;
+    
+
+}
+.centre{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.bal{
+    color:darkcyan;
+    font-family:'Trebuchet MS';
+    font-size: 75px;
+    text-align: center;
+    text-shadow: 3px 3px 5px black,-3px -3px 5px black;
+    display: inline-block;
+    
+}
+body{
+    background-image: url("bg1.jpg");
+    background-size: cover;
+}
+
+
+.button2{
+    background-color:azure;
+    font-size: 20px;
+    font-family:'Trebuchet MS';
+    font-weight: 200;
+    border-radius: 8px ;
+    width: 400px;
+    margin-left:7%;
+
+    border-color: azure;
+    display: inline-block;
+    color:black;
+}
+
+.left
+{
+    text-align: left;
+    padding-left:8%;
+    margin-right: 50%;
+}
+p{  
+    color: white;
+    font-family: 'Trebuchet MS';
+    text-shadow: 0px 1px black,0px -1px black;
+}
+.para{
+    padding-left: 30%;
+}
+* {box-sizing: border-box}
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+  margin-left: 25%;
+  margin-right:25%;
+}
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+.apple {
+  background-color: black;
+  color: white;
+}
+
+input[type=submit] 
+{
+  background-color: darkcyan;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover 
+{
+  background-color:goldenrod;
+}
+
+.col 
+{
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+
+.hide-md-lg {
+  display: none;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color:blueviolet;
+  border-radius: 0px 0px 4px 4px;
+  font-family: 'Trebuchet MS';
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  .vl {
+    display: none;
+  }
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="centre"><h1 class="head">Rent.</h1><h1 class="bal">al</h1></div>
+      <div class="container">
+        <form action="main.html">
+          <div class="row">
+            <h2 style="text-align:center;font-family: 'Trebuchet MS';">Login with Social Media or Manually</h2>
+            <div class="vl">
+              <span class="vl-innertext"></span>
+            </div>
+      
+            <div class="col">
+              <a href="https://www.facebook.com/login/" class="fb btn">
+                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+              </a>
+              <a href="http://www.twitter.com/" class="twitter btn">
+                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+              </a>
+              <a href="https://accounts.google.com/ServiceLogin?ltmpl=mobNH" class="google btn">
+                <i class="fa fa-google fa-fw"></i> Login with Google+
+              </a>
+              <a href="https://appleid.apple.com/account/home" class="apple btn">
+                <i class="fa fa-apple fa-fw"></i> Login with Apple
+              </a>
+            </div>
+      
+            <div class="col">
+      
+              <input type="text" name="username" placeholder="Username" required>
+              <input type="password" name="password" placeholder="Password" required>
+              <input type="submit" value="Login" onclick="f1()"/>
+              <a href="main.html" style="color:aliceblue ; background-color:darkcyan; text-align: center;" class="btn"></a>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <div class="bottom-container">
+        <div class="row">
+          <div class="col">
+            <a href="signup.html" style="color:white" class="btn">Sign up</a>
+          </div>
+          <div class="col">
+            <a href="." style="color:white" class="btn">Forgot password?</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
